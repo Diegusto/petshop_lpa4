@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diegu\\source\\repos\\projeto petshop\\projeto petshop\\projeto petshop.csproj",
-      "projectName": "projeto petshop",
-      "projectPath": "C:\\Users\\diegu\\source\\repos\\projeto petshop\\projeto petshop\\projeto petshop.csproj",
+      "projectUniqueName": "C:\\Users\\diegu\\source\\repos\\projeto petshop\\projeto petshop\\projeto_petshop.csproj",
+      "projectName": "projeto_petshop",
+      "projectPath": "C:\\Users\\diegu\\source\\repos\\projeto petshop\\projeto petshop\\projeto_petshop.csproj",
       "packagesPath": "C:\\Users\\diegu\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\diegu\\source\\repos\\projeto petshop\\projeto petshop\\obj\\",
       "projectStyle": "PackageReference",
