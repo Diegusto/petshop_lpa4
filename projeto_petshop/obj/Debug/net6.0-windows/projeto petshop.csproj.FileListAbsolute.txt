@@ -1,0 +1,19 @@
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\bin\Debug\net6.0-windows\projeto petshop.exe
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\bin\Debug\net6.0-windows\projeto petshop.deps.json
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\bin\Debug\net6.0-windows\projeto petshop.runtimeconfig.json
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\bin\Debug\net6.0-windows\projeto petshop.dll
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\bin\Debug\net6.0-windows\projeto petshop.pdb
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Cadastro_Produto.resources
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Cadastro_Usuario.resources
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Form1.resources
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Form2.resources
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto petshop.csproj.GenerateResource.cache
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto petshop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto petshop.AssemblyInfoInputs.cache
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto petshop.AssemblyInfo.cs
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto petshop.csproj.CoreCompileInputs.cache
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto petshop.dll
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\refint\projeto petshop.dll
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto petshop.pdb
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\projeto petshop.genruntimeconfig.cache
+C:\Users\diegu\source\repos\projeto petshop\projeto petshop\obj\Debug\net6.0-windows\ref\projeto petshop.dll
