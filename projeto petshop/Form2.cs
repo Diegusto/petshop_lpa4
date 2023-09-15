@@ -17,18 +17,25 @@ namespace projeto_petshop
             InitializeComponent();
         }
 
-        private void Cad_Prodbtn_Click(object sender, EventArgs e)
+        private void LogOutbtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Cadastro_Produto cad_prod = new Cadastro_Produto();
-            cad_prod.Show();
+            this.Close();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
 
-        private void Cad_Userbtn_Click(object sender, EventArgs e)
+        private void Cad_Userbtn_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Cadastro_Usuario cad_user = new Cadastro_Usuario();
             cad_user.Show();
+        }
+
+        private void Cad_Prodbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cadastro_Produto cad_prod = new Cadastro_Produto();
+            cad_prod.Show();
         }
     }
 }

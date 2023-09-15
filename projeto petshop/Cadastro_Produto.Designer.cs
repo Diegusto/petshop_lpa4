@@ -28,136 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            ConfirmCadProd = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.product_name = new System.Windows.Forms.TextBox();
+            this.product_value = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.animal = new System.Windows.Forms.ComboBox();
+            this.product_type = new System.Windows.Forms.ComboBox();
+            this.cancel_cad_prod = new System.Windows.Forms.Button();
+            this.confirm_cad_prod = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(250, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(263, 37);
-            label1.TabIndex = 0;
-            label1.Text = "Cadastro de Produto";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(250, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(263, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cadastro de Produto";
             // 
-            // textBox1
+            // product_name
             // 
-            textBox1.Location = new Point(368, 102);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            this.product_name.Location = new System.Drawing.Point(368, 102);
+            this.product_name.Name = "product_name";
+            this.product_name.Size = new System.Drawing.Size(100, 23);
+            this.product_name.TabIndex = 1;
             // 
-            // textBox2
+            // product_value
             // 
-            textBox2.Location = new Point(368, 151);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 2;
+            this.product_value.Location = new System.Drawing.Point(368, 151);
+            this.product_value.Name = "product_value";
+            this.product_value.Size = new System.Drawing.Size(100, 23);
+            this.product_value.TabIndex = 2;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(256, 105);
-            label2.Name = "label2";
-            label2.Size = new Size(106, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Nome do produto:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(256, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Nome do produto:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(263, 154);
-            label3.Name = "label3";
-            label3.Size = new Size(99, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Valor do produto:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(263, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Valor do produto:";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(266, 203);
-            label4.Name = "label4";
-            label4.Size = new Size(96, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Tipo do Produto:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(266, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Tipo do Produto:";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(259, 251);
-            label5.Name = "label5";
-            label5.Size = new Size(103, 15);
-            label5.TabIndex = 8;
-            label5.Text = "Animal destinado:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(259, 251);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Animal destinado:";
             // 
-            // comboBox1
+            // animal
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(368, 248);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 9;
+            this.animal.FormattingEnabled = true;
+            this.animal.Location = new System.Drawing.Point(368, 248);
+            this.animal.Name = "animal";
+            this.animal.Size = new System.Drawing.Size(121, 23);
+            this.animal.TabIndex = 9;
             // 
-            // comboBox2
+            // product_type
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(368, 200);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 10;
+            this.product_type.FormattingEnabled = true;
+            this.product_type.Location = new System.Drawing.Point(368, 200);
+            this.product_type.Name = "product_type";
+            this.product_type.Size = new System.Drawing.Size(121, 23);
+            this.product_type.TabIndex = 10;
             // 
-            // ConfirmCadProd
+            // cancel_cad_prod
             // 
-            ConfirmCadProd.Location = new Point(347, 297);
-            ConfirmCadProd.Name = "ConfirmCadProd";
-            ConfirmCadProd.Size = new Size(75, 23);
-            ConfirmCadProd.TabIndex = 11;
-            ConfirmCadProd.Text = "confirmar";
-            ConfirmCadProd.UseVisualStyleBackColor = true;
-            ConfirmCadProd.Click += ConfirmCadProd_Click;
+            this.cancel_cad_prod.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cancel_cad_prod.Location = new System.Drawing.Point(453, 297);
+            this.cancel_cad_prod.Name = "cancel_cad_prod";
+            this.cancel_cad_prod.Size = new System.Drawing.Size(75, 23);
+            this.cancel_cad_prod.TabIndex = 12;
+            this.cancel_cad_prod.Text = "cancelar";
+            this.cancel_cad_prod.UseVisualStyleBackColor = true;
+            this.cancel_cad_prod.Click += new System.EventHandler(this.cancel_cad_prod_Click);
+            // 
+            // confirm_cad_prod
+            // 
+            this.confirm_cad_prod.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.confirm_cad_prod.Location = new System.Drawing.Point(353, 297);
+            this.confirm_cad_prod.Name = "confirm_cad_prod";
+            this.confirm_cad_prod.Size = new System.Drawing.Size(75, 23);
+            this.confirm_cad_prod.TabIndex = 13;
+            this.confirm_cad_prod.Text = "confirmar";
+            this.confirm_cad_prod.UseVisualStyleBackColor = true;
+            this.confirm_cad_prod.Click += new System.EventHandler(this.confirm_cad_prod_Click);
             // 
             // Cadastro_Produto
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(ConfirmCadProd);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Name = "Cadastro_Produto";
-            Text = "Cadastro_Produto";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.confirm_cad_prod);
+            this.Controls.Add(this.cancel_cad_prod);
+            this.Controls.Add(this.product_type);
+            this.Controls.Add(this.animal);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.product_value);
+            this.Controls.Add(this.product_name);
+            this.Controls.Add(this.label1);
+            this.Name = "Cadastro_Produto";
+            this.Text = "Cadastro_Produto";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox product_name;
+        private TextBox product_value;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private Button ConfirmCadProd;
+        private ComboBox animal;
+        private ComboBox product_type;
+        private Button cancel_cad_prod;
+        private Button confirm_cad_prod;
     }
 }
