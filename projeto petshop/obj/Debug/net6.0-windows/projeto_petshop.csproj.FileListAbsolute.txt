@@ -18,3 +18,5 @@ C:\Users\CJ3014673\Downloads\projeto\petshop_lpa4\projeto petshop\obj\Debug\net6
 C:\Users\CJ3014673\Downloads\projeto\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.pdb
 C:\Users\CJ3014673\Downloads\projeto\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.genruntimeconfig.cache
 C:\Users\CJ3014673\Downloads\projeto\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\ref\projeto_petshop.dll
+C:\Users\CJ3014673\Downloads\projeto\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Product_management.resources
+C:\Users\CJ3014673\Downloads\projeto\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.UserManagement.resources

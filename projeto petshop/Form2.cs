@@ -24,18 +24,19 @@ namespace projeto_petshop
             f1.Show();
         }
 
-        private void Cad_Userbtn_Click_1(object sender, EventArgs e)
+
+        private void UserManagementbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Cadastro_Usuario cad_user = new Cadastro_Usuario();
-            cad_user.Show();
+            UserManagement user_man = new UserManagement();
+            user_man.Show();
         }
 
-        private void Cad_Prodbtn_Click_1(object sender, EventArgs e)
+        private void adm_prodbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Cadastro_Produto cad_prod = new Cadastro_Produto();
-            cad_prod.Show();
+            Product_management prod_man = new Product_management();
+            prod_man.Show();
         }
     }
 }
