@@ -13,7 +13,7 @@ create table tipo_produto (
 );
 
 create table clientes (
-	id int not null,
+	id int not null AUTO_INCREMENT,
 	email varchar(255) not null,
 	nome varchar (255) not null,
 	senha varchar (40) not null,
@@ -21,7 +21,7 @@ create table clientes (
 );
 
 create table produtos (
-	id int not null,
+	id int not null AUTO_INCREMENT,
 	tipo int not null,
 	descricao varchar (255),
 	valor varchar (255) not null,
@@ -32,7 +32,7 @@ create table produtos (
 );
 
 create table vendas (
-	id int not null,
+	id int not null AUTO_INCREMENT,
 	id_cliente int not null,
 	id_produto int not null,
 	valor_total varchar(255) not null,
