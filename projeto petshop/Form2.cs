@@ -38,5 +38,12 @@ namespace projeto_petshop
             Product_management prod_man = new Product_management();
             prod_man.Show();
         }
+
+        private void adm_sellbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            sales_management sales_man = new sales_management();
+            sales_man.Show();
+        }
     }
 }

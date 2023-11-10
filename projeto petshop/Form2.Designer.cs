@@ -28,63 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LogOutbtn = new System.Windows.Forms.Button();
-            this.UserManagementbtn = new System.Windows.Forms.Button();
-            this.adm_prodbtn = new System.Windows.Forms.Button();
-            this.adm_sellbtn = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            LogOutbtn = new Button();
+            UserManagementbtn = new Button();
+            adm_prodbtn = new Button();
+            adm_sellbtn = new Button();
+            SuspendLayout();
             // 
             // LogOutbtn
             // 
-            this.LogOutbtn.Location = new System.Drawing.Point(126, 296);
-            this.LogOutbtn.Name = "LogOutbtn";
-            this.LogOutbtn.Size = new System.Drawing.Size(86, 23);
-            this.LogOutbtn.TabIndex = 4;
-            this.LogOutbtn.Text = "desconectar";
-            this.LogOutbtn.UseVisualStyleBackColor = true;
-            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
+            LogOutbtn.Location = new Point(126, 296);
+            LogOutbtn.Name = "LogOutbtn";
+            LogOutbtn.Size = new Size(86, 23);
+            LogOutbtn.TabIndex = 4;
+            LogOutbtn.Text = "desconectar";
+            LogOutbtn.UseVisualStyleBackColor = true;
+            LogOutbtn.Click += LogOutbtn_Click;
             // 
             // UserManagementbtn
             // 
-            this.UserManagementbtn.Location = new System.Drawing.Point(97, 30);
-            this.UserManagementbtn.Name = "UserManagementbtn";
-            this.UserManagementbtn.Size = new System.Drawing.Size(150, 50);
-            this.UserManagementbtn.TabIndex = 5;
-            this.UserManagementbtn.Text = "Administrar Usuarios";
-            this.UserManagementbtn.UseVisualStyleBackColor = true;
-            this.UserManagementbtn.Click += new System.EventHandler(this.UserManagementbtn_Click);
+            UserManagementbtn.Location = new Point(97, 30);
+            UserManagementbtn.Name = "UserManagementbtn";
+            UserManagementbtn.Size = new Size(150, 50);
+            UserManagementbtn.TabIndex = 5;
+            UserManagementbtn.Text = "Administrar Usuarios";
+            UserManagementbtn.UseVisualStyleBackColor = true;
+            UserManagementbtn.Click += UserManagementbtn_Click;
             // 
             // adm_prodbtn
             // 
-            this.adm_prodbtn.Location = new System.Drawing.Point(97, 119);
-            this.adm_prodbtn.Name = "adm_prodbtn";
-            this.adm_prodbtn.Size = new System.Drawing.Size(150, 50);
-            this.adm_prodbtn.TabIndex = 6;
-            this.adm_prodbtn.Text = "Administrar Produtos";
-            this.adm_prodbtn.UseVisualStyleBackColor = true;
-            this.adm_prodbtn.Click += new System.EventHandler(this.adm_prodbtn_Click);
+            adm_prodbtn.Location = new Point(97, 119);
+            adm_prodbtn.Name = "adm_prodbtn";
+            adm_prodbtn.Size = new Size(150, 50);
+            adm_prodbtn.TabIndex = 6;
+            adm_prodbtn.Text = "Administrar Produtos";
+            adm_prodbtn.UseVisualStyleBackColor = true;
+            adm_prodbtn.Click += adm_prodbtn_Click;
             // 
             // adm_sellbtn
             // 
-            this.adm_sellbtn.Location = new System.Drawing.Point(97, 200);
-            this.adm_sellbtn.Name = "adm_sellbtn";
-            this.adm_sellbtn.Size = new System.Drawing.Size(150, 50);
-            this.adm_sellbtn.TabIndex = 7;
-            this.adm_sellbtn.Text = "Administrar Vendas";
-            this.adm_sellbtn.UseVisualStyleBackColor = true;
+            adm_sellbtn.Location = new Point(97, 200);
+            adm_sellbtn.Name = "adm_sellbtn";
+            adm_sellbtn.Size = new Size(150, 50);
+            adm_sellbtn.TabIndex = 7;
+            adm_sellbtn.Text = "Administrar Vendas";
+            adm_sellbtn.UseVisualStyleBackColor = true;
+            adm_sellbtn.Click += adm_sellbtn_Click;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 386);
-            this.Controls.Add(this.adm_sellbtn);
-            this.Controls.Add(this.adm_prodbtn);
-            this.Controls.Add(this.UserManagementbtn);
-            this.Controls.Add(this.LogOutbtn);
-            this.Name = "Form2";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(332, 386);
+            Controls.Add(adm_sellbtn);
+            Controls.Add(adm_prodbtn);
+            Controls.Add(UserManagementbtn);
+            Controls.Add(LogOutbtn);
+            Name = "Form2";
+            ResumeLayout(false);
         }
 
         #endregion
