@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace projeto_petshop
 {
@@ -34,9 +35,34 @@ namespace projeto_petshop
             {
                 if (password == confirm_password)
                 {
-                    this.Close();
-                    Form2 f2 = new Form2();
-                    f2.Show();
+
+                    Connection connection = new Connection();
+                    SqlCommand sqlCommand = new SqlCommand();
+
+                    connection.OpenConnection();
+
+                    sqlCommand.Connection = connection.ReturnConnection();
+                    sqlCommand.CommandText = "insert into clientes (email, nome, senha) Values (@email, @nome, @senha)" ;
+                        sqlCommand.Parameters.AddWithValue("@email", "teste@teste");
+                        sqlCommand.Parameters.AddWithValue("@nome", username);
+                        sqlCommand.Parameters.AddWithValue("@senha", password);
+                    try
+                    {
+
+                        sqlCommand.ExecuteNonQuery();
+                        MessageBox.Show("cadastrado com sucesso");
+                    }
+                    catch (Exception ex) {
+                        throw new Exception("Erro" + ex.Message);    
+                    }
+                    finally
+                    {
+                        connection.CloseConnection();
+                        this.Close();
+                        Form2 f2 = new Form2();
+                        f2.Show();
+                    }
+                        
                 }
                 else
                 {

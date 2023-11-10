@@ -41,14 +41,14 @@
             // 
             // userText
             // 
-            this.userText.Location = new System.Drawing.Point(330, 128);
+            this.userText.Location = new System.Drawing.Point(218, 128);
             this.userText.Name = "userText";
             this.userText.Size = new System.Drawing.Size(100, 23);
             this.userText.TabIndex = 1;
             // 
             // passwordText
             // 
-            this.passwordText.Location = new System.Drawing.Point(330, 176);
+            this.passwordText.Location = new System.Drawing.Point(218, 176);
             this.passwordText.Name = "passwordText";
             this.passwordText.PasswordChar = '*';
             this.passwordText.Size = new System.Drawing.Size(100, 23);
@@ -56,7 +56,7 @@
             // 
             // confirmPasswordText
             // 
-            this.confirmPasswordText.Location = new System.Drawing.Point(330, 224);
+            this.confirmPasswordText.Location = new System.Drawing.Point(218, 224);
             this.confirmPasswordText.Name = "confirmPasswordText";
             this.confirmPasswordText.PasswordChar = '*';
             this.confirmPasswordText.Size = new System.Drawing.Size(100, 23);
@@ -65,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(275, 131);
+            this.label1.Location = new System.Drawing.Point(163, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 15);
             this.label1.TabIndex = 4;
@@ -74,7 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 179);
+            this.label2.Location = new System.Drawing.Point(174, 179);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 15);
             this.label2.TabIndex = 5;
@@ -83,7 +83,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(231, 227);
+            this.label3.Location = new System.Drawing.Point(119, 227);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 15);
             this.label3.TabIndex = 6;
@@ -93,7 +93,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(245, 47);
+            this.label4.Location = new System.Drawing.Point(137, 74);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(258, 37);
             this.label4.TabIndex = 7;
@@ -101,7 +101,7 @@
             // 
             // cancel_cad_user
             // 
-            this.cancel_cad_user.Location = new System.Drawing.Point(383, 264);
+            this.cancel_cad_user.Location = new System.Drawing.Point(299, 264);
             this.cancel_cad_user.Name = "cancel_cad_user";
             this.cancel_cad_user.Size = new System.Drawing.Size(75, 23);
             this.cancel_cad_user.TabIndex = 8;
@@ -111,7 +111,7 @@
             // 
             // confirm_cad_user
             // 
-            this.confirm_cad_user.Location = new System.Drawing.Point(275, 264);
+            this.confirm_cad_user.Location = new System.Drawing.Point(163, 264);
             this.confirm_cad_user.Name = "confirm_cad_user";
             this.confirm_cad_user.Size = new System.Drawing.Size(75, 23);
             this.confirm_cad_user.TabIndex = 9;
@@ -123,7 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(519, 384);
             this.Controls.Add(this.confirm_cad_user);
             this.Controls.Add(this.cancel_cad_user);
             this.Controls.Add(this.label4);

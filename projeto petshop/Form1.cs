@@ -1,3 +1,5 @@
+using System.Data.SqlClient;
+
 namespace projeto_petshop
 {
     public partial class Form1 : Form
@@ -6,7 +8,6 @@ namespace projeto_petshop
         {
             InitializeComponent();
         }
-
 
 
         private void Exitbtn_Click(object sender, EventArgs e)
