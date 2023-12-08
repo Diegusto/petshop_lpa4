@@ -30,13 +30,13 @@
         {
             add_sale = new Button();
             label1 = new Label();
-            list_sales = new ListBox();
             button2 = new Button();
+            listar_vendas = new ListView();
             SuspendLayout();
             // 
             // add_sale
             // 
-            add_sale.Location = new Point(268, 131);
+            add_sale.Location = new Point(12, 131);
             add_sale.Name = "add_sale";
             add_sale.Size = new Size(108, 67);
             add_sale.TabIndex = 0;
@@ -53,15 +53,6 @@
             label1.TabIndex = 1;
             label1.Text = "Administrar Vendas";
             // 
-            // list_sales
-            // 
-            list_sales.FormattingEnabled = true;
-            list_sales.ItemHeight = 15;
-            list_sales.Location = new Point(-1, 218);
-            list_sales.Name = "list_sales";
-            list_sales.Size = new Size(687, 319);
-            list_sales.TabIndex = 2;
-            // 
             // button2
             // 
             button2.Location = new Point(405, 153);
@@ -72,13 +63,21 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // listar_vendas
+            // 
+            listar_vendas.Location = new Point(12, 236);
+            listar_vendas.Name = "listar_vendas";
+            listar_vendas.Size = new Size(663, 289);
+            listar_vendas.TabIndex = 4;
+            listar_vendas.UseCompatibleStateImageBehavior = false;
+            // 
             // sales_management
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(687, 537);
+            Controls.Add(listar_vendas);
             Controls.Add(button2);
-            Controls.Add(list_sales);
             Controls.Add(label1);
             Controls.Add(add_sale);
             Name = "sales_management";
@@ -91,7 +90,7 @@
 
         private Button add_sale;
         private Label label1;
-        private ListBox list_sales;
         private Button button2;
+        private ListView listar_vendas;
     }
 }
