@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ListViewGroup listViewGroup1 = new ListViewGroup("Nome", HorizontalAlignment.Left);
             user_cadbtn = new Button();
             label1 = new Label();
-            Listar_Usuarios = new ListBox();
             returnbtn = new Button();
+            listar_usuarios = new ListView();
+            excluir = new Button();
             SuspendLayout();
             // 
             // user_cadbtn
             // 
-            user_cadbtn.Location = new Point(264, 112);
+            user_cadbtn.Location = new Point(12, 112);
             user_cadbtn.Name = "user_cadbtn";
             user_cadbtn.Size = new Size(127, 73);
             user_cadbtn.TabIndex = 0;
@@ -54,18 +56,9 @@
             label1.TabIndex = 2;
             label1.Text = "Administrar Usuarios";
             // 
-            // Listar_Usuarios
-            // 
-            Listar_Usuarios.FormattingEnabled = true;
-            Listar_Usuarios.ItemHeight = 15;
-            Listar_Usuarios.Location = new Point(2, 191);
-            Listar_Usuarios.Name = "Listar_Usuarios";
-            Listar_Usuarios.Size = new Size(670, 394);
-            Listar_Usuarios.TabIndex = 3;
-            // 
             // returnbtn
             // 
-            returnbtn.Location = new Point(421, 137);
+            returnbtn.Location = new Point(352, 137);
             returnbtn.Name = "returnbtn";
             returnbtn.Size = new Size(75, 23);
             returnbtn.TabIndex = 5;
@@ -73,17 +66,39 @@
             returnbtn.UseVisualStyleBackColor = true;
             returnbtn.Click += returnbtn_Click;
             // 
+            // listar_usuarios
+            // 
+            listViewGroup1.Header = "Nome";
+            listViewGroup1.Name = "listViewGroup1";
+            listar_usuarios.Groups.AddRange(new ListViewGroup[] { listViewGroup1 });
+            listar_usuarios.Location = new Point(12, 214);
+            listar_usuarios.Name = "listar_usuarios";
+            listar_usuarios.Size = new Size(484, 360);
+            listar_usuarios.TabIndex = 6;
+            listar_usuarios.UseCompatibleStateImageBehavior = false;
+            // 
+            // excluir
+            // 
+            excluir.Location = new Point(182, 112);
+            excluir.Name = "excluir";
+            excluir.Size = new Size(127, 73);
+            excluir.TabIndex = 7;
+            excluir.Text = "excluir";
+            excluir.UseVisualStyleBackColor = true;
+            // 
             // UserManagement
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(675, 586);
+            Controls.Add(excluir);
+            Controls.Add(listar_usuarios);
             Controls.Add(returnbtn);
-            Controls.Add(Listar_Usuarios);
             Controls.Add(label1);
             Controls.Add(user_cadbtn);
             Name = "UserManagement";
             Text = "UserManagement";
+            Load += UserManagement_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -92,7 +107,8 @@
 
         private Button user_cadbtn;
         private Label label1;
-        private ListBox Listar_Usuarios;
         private Button returnbtn;
+        private ListView listar_usuarios;
+        private Button excluir;
     }
 }

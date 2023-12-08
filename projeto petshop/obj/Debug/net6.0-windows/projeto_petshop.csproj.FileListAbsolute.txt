@@ -50,3 +50,33 @@ C:\Users\cj3014673\Downloads\projeto petshop\petshop_lpa4\projeto petshop\obj\De
 C:\Users\cj3014673\Downloads\projeto petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.pdb
 C:\Users\cj3014673\Downloads\projeto petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.genruntimeconfig.cache
 C:\Users\cj3014673\Downloads\projeto petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\ref\projeto_petshop.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.csproj.AssemblyReference.cache
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Cadastro_Produto.resources
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Cadastro_Usuario.resources
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Form1.resources
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Form2.resources
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Product_management.resources
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.sales_management.resources
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.UserManagement.resources
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.csproj.GenerateResource.cache
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.AssemblyInfoInputs.cache
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.AssemblyInfo.cs
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.csproj.CoreCompileInputs.cache
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\refint\projeto_petshop.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.pdb
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\projeto_petshop.exe
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\projeto_petshop.deps.json
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\projeto_petshop.runtimeconfig.json
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\projeto_petshop.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\projeto_petshop.pdb
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.csproj.CopyComplete
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.genruntimeconfig.cache
+C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\ref\projeto_petshop.dll

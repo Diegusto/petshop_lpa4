@@ -46,7 +46,7 @@
             // 
             // cad_prodbtn
             // 
-            cad_prodbtn.Location = new Point(248, 128);
+            cad_prodbtn.Location = new Point(33, 128);
             cad_prodbtn.Name = "cad_prodbtn";
             cad_prodbtn.Size = new Size(129, 68);
             cad_prodbtn.TabIndex = 1;
@@ -68,9 +68,9 @@
             // 
             List_Products.FormattingEnabled = true;
             List_Products.ItemHeight = 15;
-            List_Products.Location = new Point(0, 202);
+            List_Products.Location = new Point(146, 202);
             List_Products.Name = "List_Products";
-            List_Products.Size = new Size(685, 349);
+            List_Products.Size = new Size(324, 349);
             List_Products.TabIndex = 5;
             // 
             // Product_management

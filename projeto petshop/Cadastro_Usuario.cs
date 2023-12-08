@@ -30,6 +30,7 @@ namespace projeto_petshop
             string username = userText.Text;
             string password = passwordText.Text;
             string confirm_password = confirmPasswordText.Text;
+            string email = emailtxt.Text;
 
             if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password) && !string.IsNullOrEmpty(confirm_password))
             {
@@ -42,18 +43,19 @@ namespace projeto_petshop
                     connection.OpenConnection();
 
                     sqlCommand.Connection = connection.ReturnConnection();
-                    sqlCommand.CommandText = "insert into clientes (email, nome, senha) Values (@email, @nome, @senha)" ;
-                        sqlCommand.Parameters.AddWithValue("@email", "teste@teste");
-                        sqlCommand.Parameters.AddWithValue("@nome", username);
-                        sqlCommand.Parameters.AddWithValue("@senha", password);
+                    sqlCommand.CommandText = "insert into clientes (email, nome, senha) Values (@email, @nome, @senha)";
+                    sqlCommand.Parameters.AddWithValue("@email", email);
+                    sqlCommand.Parameters.AddWithValue("@nome", username);
+                    sqlCommand.Parameters.AddWithValue("@senha", password);
                     try
                     {
 
                         sqlCommand.ExecuteNonQuery();
                         MessageBox.Show("cadastrado com sucesso");
                     }
-                    catch (Exception ex) {
-                        throw new Exception("Erro" + ex.Message);    
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Erro" + ex.Message);
                     }
                     finally
                     {
@@ -62,7 +64,7 @@ namespace projeto_petshop
                         Form2 f2 = new Form2();
                         f2.Show();
                     }
-                        
+
                 }
                 else
                 {
@@ -73,7 +75,12 @@ namespace projeto_petshop
             {
                 MessageBox.Show("falha no cadastro, um ou mais campos não foram preeenchidos");
             }
-         
+
+
+        }
+
+        private void Cadastro_Usuario_Load(object sender, EventArgs e)
+        {
 
         }
     }
