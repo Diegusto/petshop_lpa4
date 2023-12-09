@@ -28,136 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            userText = new TextBox();
-            passwordText = new TextBox();
-            confirmPasswordText = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            cancel_cad_user = new Button();
-            confirm_cad_user = new Button();
-            emailtxt = new TextBox();
-            label5 = new Label();
-            SuspendLayout();
+            this.userText = new System.Windows.Forms.TextBox();
+            this.passwordText = new System.Windows.Forms.TextBox();
+            this.confirmPasswordText = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cancel_cad_user = new System.Windows.Forms.Button();
+            this.confirm_cad_user = new System.Windows.Forms.Button();
+            this.emailtxt = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // userText
             // 
-            userText.Location = new Point(218, 128);
-            userText.Name = "userText";
-            userText.Size = new Size(100, 23);
-            userText.TabIndex = 1;
+            this.userText.Location = new System.Drawing.Point(218, 128);
+            this.userText.Name = "userText";
+            this.userText.Size = new System.Drawing.Size(100, 23);
+            this.userText.TabIndex = 1;
             // 
             // passwordText
             // 
-            passwordText.Location = new Point(218, 224);
-            passwordText.Name = "passwordText";
-            passwordText.PasswordChar = '*';
-            passwordText.Size = new Size(100, 23);
-            passwordText.TabIndex = 2;
+            this.passwordText.Location = new System.Drawing.Point(218, 224);
+            this.passwordText.Name = "passwordText";
+            this.passwordText.PasswordChar = '*';
+            this.passwordText.Size = new System.Drawing.Size(100, 23);
+            this.passwordText.TabIndex = 2;
             // 
             // confirmPasswordText
             // 
-            confirmPasswordText.Location = new Point(218, 268);
-            confirmPasswordText.Name = "confirmPasswordText";
-            confirmPasswordText.PasswordChar = '*';
-            confirmPasswordText.Size = new Size(100, 23);
-            confirmPasswordText.TabIndex = 3;
+            this.confirmPasswordText.Location = new System.Drawing.Point(218, 268);
+            this.confirmPasswordText.Name = "confirmPasswordText";
+            this.confirmPasswordText.PasswordChar = '*';
+            this.confirmPasswordText.Size = new System.Drawing.Size(100, 23);
+            this.confirmPasswordText.TabIndex = 3;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(163, 131);
-            label1.Name = "label1";
-            label1.Size = new Size(49, 15);
-            label1.TabIndex = 4;
-            label1.Text = "usuario:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(163, 131);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "usuario:";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(171, 227);
-            label2.Name = "label2";
-            label2.Size = new Size(41, 15);
-            label2.TabIndex = 5;
-            label2.Text = "senha:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(171, 227);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "senha:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(116, 268);
-            label3.Name = "label3";
-            label3.Size = new Size(96, 15);
-            label3.TabIndex = 6;
-            label3.Text = "confirmar senha:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(116, 268);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "confirmar senha:";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(137, 74);
-            label4.Name = "label4";
-            label4.Size = new Size(258, 37);
-            label4.TabIndex = 7;
-            label4.Text = "Cadastro de Usuario";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(137, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(258, 37);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Cadastro de Usuario";
             // 
             // cancel_cad_user
             // 
-            cancel_cad_user.Location = new Point(297, 311);
-            cancel_cad_user.Name = "cancel_cad_user";
-            cancel_cad_user.Size = new Size(75, 23);
-            cancel_cad_user.TabIndex = 8;
-            cancel_cad_user.Text = "cancelar";
-            cancel_cad_user.UseVisualStyleBackColor = true;
-            cancel_cad_user.Click += cancel_cad_user_Click;
+            this.cancel_cad_user.Location = new System.Drawing.Point(297, 311);
+            this.cancel_cad_user.Name = "cancel_cad_user";
+            this.cancel_cad_user.Size = new System.Drawing.Size(75, 23);
+            this.cancel_cad_user.TabIndex = 8;
+            this.cancel_cad_user.Text = "cancelar";
+            this.cancel_cad_user.UseVisualStyleBackColor = true;
+            this.cancel_cad_user.Click += new System.EventHandler(this.cancel_cad_user_Click);
             // 
             // confirm_cad_user
             // 
-            confirm_cad_user.Location = new Point(151, 311);
-            confirm_cad_user.Name = "confirm_cad_user";
-            confirm_cad_user.Size = new Size(75, 23);
-            confirm_cad_user.TabIndex = 9;
-            confirm_cad_user.Text = "confirmar";
-            confirm_cad_user.UseVisualStyleBackColor = true;
-            confirm_cad_user.Click += confirm_cad_user_Click;
+            this.confirm_cad_user.Location = new System.Drawing.Point(151, 311);
+            this.confirm_cad_user.Name = "confirm_cad_user";
+            this.confirm_cad_user.Size = new System.Drawing.Size(75, 23);
+            this.confirm_cad_user.TabIndex = 9;
+            this.confirm_cad_user.Text = "confirmar";
+            this.confirm_cad_user.UseVisualStyleBackColor = true;
+            this.confirm_cad_user.Click += new System.EventHandler(this.confirm_cad_user_Click);
             // 
             // emailtxt
             // 
-            emailtxt.Location = new Point(218, 175);
-            emailtxt.Name = "emailtxt";
-            emailtxt.Size = new Size(100, 23);
-            emailtxt.TabIndex = 10;
+            this.emailtxt.Location = new System.Drawing.Point(218, 175);
+            this.emailtxt.Name = "emailtxt";
+            this.emailtxt.Size = new System.Drawing.Size(100, 23);
+            this.emailtxt.TabIndex = 10;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(173, 178);
-            label5.Name = "label5";
-            label5.Size = new Size(39, 15);
-            label5.TabIndex = 11;
-            label5.Text = "email:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(173, 178);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "email:";
             // 
             // Cadastro_Usuario
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(519, 384);
-            Controls.Add(label5);
-            Controls.Add(emailtxt);
-            Controls.Add(confirm_cad_user);
-            Controls.Add(cancel_cad_user);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(confirmPasswordText);
-            Controls.Add(passwordText);
-            Controls.Add(userText);
-            Name = "Cadastro_Usuario";
-            Text = "Cadastro_Usuario";
-            Load += Cadastro_Usuario_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(519, 384);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.emailtxt);
+            this.Controls.Add(this.confirm_cad_user);
+            this.Controls.Add(this.cancel_cad_user);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.confirmPasswordText);
+            this.Controls.Add(this.passwordText);
+            this.Controls.Add(this.userText);
+            this.Name = "Cadastro_Usuario";
+            this.Text = "Cadastro_Usuario";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -61,8 +61,8 @@ namespace projeto_petshop
                     {
                         connection.CloseConnection();
                         this.Close();
-                        Form2 f2 = new Form2();
-                        f2.Show();
+                        UserManagement userman = new UserManagement();
+                        userman.Show();
                     }
 
                 }
@@ -76,11 +76,6 @@ namespace projeto_petshop
                 MessageBox.Show("falha no cadastro, um ou mais campos não foram preeenchidos");
             }
 
-
-        }
-
-        private void Cadastro_Usuario_Load(object sender, EventArgs e)
-        {
 
         }
     }

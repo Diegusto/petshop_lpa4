@@ -33,6 +33,7 @@ namespace projeto_petshop
             string ProductValue = product_value.Text;
             string ProductType = product_type.Text;
             string Animal = animal.Text;
+            
 
             if (!string.IsNullOrEmpty(ProductName) && !string.IsNullOrEmpty(ProductValue) && !string.IsNullOrEmpty(ProductType) && !string.IsNullOrEmpty(Animal))
             {
@@ -46,7 +47,7 @@ namespace projeto_petshop
                 sqlCommand.Parameters.AddWithValue("@tipo", ProductType);
                 sqlCommand.Parameters.AddWithValue("@descricao", ProductName);
                 sqlCommand.Parameters.AddWithValue("@valor", ProductValue);
-                sqlCommand.Parameters.AddWithValue("@valor", Animal);
+                sqlCommand.Parameters.AddWithValue("@tipo_animal",Animal);
                 try
                 {
 
@@ -71,5 +72,36 @@ namespace projeto_petshop
             }
 
         }
+
+        private void Cadastro_Produto_Load(object sender, EventArgs e)
+        {
+            Connection connection = new Connection();
+            SqlCommand sqlCommand = new SqlCommand();
+
+            connection.OpenConnection();
+
+            sqlCommand.Connection = connection.ReturnConnection();
+            sqlCommand.CommandText = "select t.descricao, p.descricao from tipo_animal t, tipo_produto p where t.id = p.id";
+            try
+            {
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    var AnimalItem = animal.Items.Add(reader[0].ToString());
+                    var ProductItem = product_type.Items.Add(reader[1].ToString());
+                }
+            }
+
+            catch (Exception ex)
+            {
+                throw new Exception("Erro" + ex.Message);
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
+
     }
 }
+

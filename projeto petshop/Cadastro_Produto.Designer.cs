@@ -157,6 +157,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Cadastro_Produto";
             this.Text = "Cadastro_Produto";
+            this.Load += new System.EventHandler(this.Cadastro_Produto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -39,6 +39,7 @@ namespace projeto_petshop
             listar_usuarios.Columns.Add("ID", 100, HorizontalAlignment.Left);
             listar_usuarios.Columns.Add("Nome", 300, HorizontalAlignment.Left);
             listar_usuarios.Columns.Add("Email", 300, HorizontalAlignment.Left);
+            listar_usuarios.FullRowSelect = true;
 
 
             Connection connection = new Connection();
@@ -56,7 +57,6 @@ namespace projeto_petshop
                     var item = listar_usuarios.Items.Add(reader[0].ToString());
                     item.SubItems.Add(reader[1].ToString());
                     item.SubItems.Add(reader[2].ToString());
-                    item.SubItems.Add(reader[3].ToString());
                 }
             }
 
@@ -67,10 +67,46 @@ namespace projeto_petshop
             finally
             {
                 connection.CloseConnection();
-                this.Close();
-                Form2 f2 = new Form2();
-                f2.Show();
             }
+        }
+
+        private void excluir_Click(object sender, EventArgs e)
+        {
+            if (listar_usuarios.Items.Count > 0)
+            {
+                ListViewItem item = listar_usuarios.SelectedItems[0];
+                string idtxt = item.SubItems[0].Text;
+                int id = Convert.ToInt32(idtxt);
+                Connection connection = new Connection();
+                SqlCommand sqlCommand = new SqlCommand();
+
+                connection.OpenConnection();
+                sqlCommand.Connection = connection.ReturnConnection();
+                sqlCommand.CommandText = "delete from clientes where id =@id";
+                sqlCommand.Parameters.AddWithValue("@id", id);
+                try
+                {
+
+                    sqlCommand.ExecuteNonQuery();
+                    MessageBox.Show("usuario removido");
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Erro" + ex.Message);
+                }
+                finally
+                {
+                    connection.CloseConnection();
+                    this.Close();
+                    Form2 f2 = new Form2();
+                    f2.Show();
+                }
+
+            }
+
+
+
+
         }
     }
 }

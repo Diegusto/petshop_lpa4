@@ -470,24 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\diegu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\cj3014673\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diegu\\Downloads\\Dev\\projeto-petshop\\petshop_lpa4\\projeto petshop\\projeto_petshop.csproj",
+      "projectUniqueName": "C:\\Users\\cj3014673\\Downloads\\projeto petshop\\petshop_lpa4\\projeto petshop\\projeto_petshop.csproj",
       "projectName": "projeto_petshop",
-      "projectPath": "C:\\Users\\diegu\\Downloads\\Dev\\projeto-petshop\\petshop_lpa4\\projeto petshop\\projeto_petshop.csproj",
-      "packagesPath": "C:\\Users\\diegu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diegu\\Downloads\\Dev\\projeto-petshop\\petshop_lpa4\\projeto petshop\\obj\\",
+      "projectPath": "C:\\Users\\cj3014673\\Downloads\\projeto petshop\\petshop_lpa4\\projeto petshop\\projeto_petshop.csproj",
+      "packagesPath": "C:\\Users\\cj3014673\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cj3014673\\Downloads\\projeto petshop\\petshop_lpa4\\projeto petshop\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\diegu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\cj3014673\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -537,7 +532,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
