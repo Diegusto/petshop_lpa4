@@ -23,8 +23,8 @@ namespace projeto_petshop
         private void cancel_cad_prod_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form2 f2 = new Form2();
-            f2.Show();
+            Product_management product = new Product_management();
+            product.Show();
         }
 
         private void confirm_cad_prod_Click(object sender, EventArgs e)
@@ -43,11 +43,18 @@ namespace projeto_petshop
                 connection.OpenConnection();
 
                 sqlCommand.Connection = connection.ReturnConnection();
+
+                sqlCommand.CommandText = "select id from tipo_animal where descricao like %@animal%";
+                sqlCommand.Parameters.AddWithValue("@animal", Animal);
+
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                var IdAnimal = reader[0];
+
                 sqlCommand.CommandText = "insert into produtos (tipo, descricao, valor, tipo_animal) Values (@tipo, @descricao, @valor, @tipo_animal)";
                 sqlCommand.Parameters.AddWithValue("@tipo", ProductType);
                 sqlCommand.Parameters.AddWithValue("@descricao", ProductName);
                 sqlCommand.Parameters.AddWithValue("@valor", ProductValue);
-                sqlCommand.Parameters.AddWithValue("@tipo_animal",Animal);
+                sqlCommand.Parameters.AddWithValue("@tipo_animal",IdAnimal);
                 try
                 {
 
@@ -62,8 +69,8 @@ namespace projeto_petshop
                 {
                     connection.CloseConnection();
                     this.Close();
-                    Form2 f2 = new Form2();
-                    f2.Show();
+                    Product_management product = new Product_management();
+                    product.Show();
                 }
             }
             else

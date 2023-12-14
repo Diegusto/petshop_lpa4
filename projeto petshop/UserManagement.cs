@@ -74,34 +74,39 @@ namespace projeto_petshop
         {
             if (listar_usuarios.Items.Count > 0)
             {
-                ListViewItem item = listar_usuarios.SelectedItems[0];
-                string idtxt = item.SubItems[0].Text;
-                int id = Convert.ToInt32(idtxt);
-                Connection connection = new Connection();
-                SqlCommand sqlCommand = new SqlCommand();
+                if (exclude.Checked == true) {
+                    ListViewItem item = listar_usuarios.SelectedItems[0];
+                    string idtxt = item.SubItems[0].Text;
+                    int id = Convert.ToInt32(idtxt);
+                    Connection connection = new Connection();
+                    SqlCommand sqlCommand = new SqlCommand();
 
-                connection.OpenConnection();
-                sqlCommand.Connection = connection.ReturnConnection();
-                sqlCommand.CommandText = "delete from clientes where id =@id";
-                sqlCommand.Parameters.AddWithValue("@id", id);
-                try
-                {
+                    connection.OpenConnection();
+                    sqlCommand.Connection = connection.ReturnConnection();
+                    sqlCommand.CommandText = "delete from clientes where id =@id";
+                    sqlCommand.Parameters.AddWithValue("@id", id);
+                    try
+                    {
 
-                    sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("usuario removido");
+                        sqlCommand.ExecuteNonQuery();
+                        MessageBox.Show("usuario removido");
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Erro" + ex.Message);
+                    }
+                    finally
+                    {
+                        connection.CloseConnection();
+                        this.Close();
+                        Form2 f2 = new Form2();
+                        f2.Show();
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    throw new Exception("Erro" + ex.Message);
+                    MessageBox.Show("confirme antes de excluir");
                 }
-                finally
-                {
-                    connection.CloseConnection();
-                    this.Close();
-                    Form2 f2 = new Form2();
-                    f2.Show();
-                }
-
             }
 
 

@@ -7,6 +7,9 @@
     <Compile Update="Cadastro_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Cadastro_Venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,6 +17,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Product_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="relatorio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="sales-management.cs">
