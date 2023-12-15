@@ -26,19 +26,26 @@ namespace projeto_petshop
                 SqlCommand sqlCommand = new SqlCommand();
 
                 connection.OpenConnection();
-
                 sqlCommand.Connection = connection.ReturnConnection();
 
-                sqlCommand.CommandText = "select id from produtos where descricao like %@produto%";
-                sqlCommand.Parameters.AddWithValue("@produto", product_name);
-
+                sqlCommand.CommandText = "select id from produtos where descricao = @produto";
+                sqlCommand.Parameters.AddWithValue("@produto", product_name.Text);
                 SqlDataReader reader = sqlCommand.ExecuteReader();
-                var IdProduto = reader[0];
+                if (reader.Read())
+                {
+                    var IdProduto = reader[0];
+                    var IdUsuario = Convert.ToInt32(User_id.Text);
 
-                sqlCommand.CommandText = "insert into vendas (id_cliente, id_produto, valor_total) Values (@id_cliente, @id_produto, @valor_total)";
-                sqlCommand.Parameters.AddWithValue("@id_cliente", User_id.Text);
-                sqlCommand.Parameters.AddWithValue("@id_produto", IdProduto);
-                sqlCommand.Parameters.AddWithValue("@valor_total", total_value.Text);
+                    connection.CloseConnection();
+
+                    connection.OpenConnection();
+                    connection.ReturnConnection();
+                    sqlCommand.CommandText = "insert into vendas (id_cliente, id_produto, valor_total) Values (@id_cliente, @id_produto, @valor_total)";
+                    sqlCommand.Parameters.AddWithValue("@id_cliente", IdUsuario);
+                    sqlCommand.Parameters.AddWithValue("@id_produto", IdProduto);
+                    sqlCommand.Parameters.AddWithValue("@valor_total", total_value.Text);
+                }
+               
              
                 try
                 {
@@ -48,7 +55,7 @@ namespace projeto_petshop
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception("Erro" + ex.Message);
+                    MessageBox.Show("usuario ou produto não encontrado");
                 }
                 finally
                 {
@@ -63,5 +70,13 @@ namespace projeto_petshop
                 MessageBox.Show("falha no cadastro, um ou mais campos não foram preenchidos");
             }
         }
+
+        private void cancel_cad_sell_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            sales_management sales = new sales_management();
+            sales.Show();
+        }
+
     }
 }

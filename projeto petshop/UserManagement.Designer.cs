@@ -28,93 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ListViewGroup listViewGroup2 = new ListViewGroup("Nome", HorizontalAlignment.Left);
-            user_cadbtn = new Button();
-            label1 = new Label();
-            returnbtn = new Button();
-            listar_usuarios = new ListView();
-            excluir = new Button();
-            exclude = new CheckBox();
-            SuspendLayout();
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Nome", System.Windows.Forms.HorizontalAlignment.Left);
+            this.user_cadbtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.returnbtn = new System.Windows.Forms.Button();
+            this.listar_usuarios = new System.Windows.Forms.ListView();
+            this.excluir = new System.Windows.Forms.Button();
+            this.exclude = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
             // 
             // user_cadbtn
             // 
-            user_cadbtn.Location = new Point(12, 112);
-            user_cadbtn.Name = "user_cadbtn";
-            user_cadbtn.Size = new Size(127, 73);
-            user_cadbtn.TabIndex = 0;
-            user_cadbtn.Text = "cadastrar";
-            user_cadbtn.UseVisualStyleBackColor = true;
-            user_cadbtn.Click += user_cadbtn_Click;
+            this.user_cadbtn.Location = new System.Drawing.Point(12, 112);
+            this.user_cadbtn.Name = "user_cadbtn";
+            this.user_cadbtn.Size = new System.Drawing.Size(127, 73);
+            this.user_cadbtn.TabIndex = 0;
+            this.user_cadbtn.Text = "cadastrar";
+            this.user_cadbtn.UseVisualStyleBackColor = true;
+            this.user_cadbtn.Click += new System.EventHandler(this.user_cadbtn_Click);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(213, 62);
-            label1.Name = "label1";
-            label1.Size = new Size(263, 37);
-            label1.TabIndex = 2;
-            label1.Text = "Administrar Usuarios";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(213, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(263, 37);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Administrar Usuarios";
             // 
             // returnbtn
             // 
-            returnbtn.Location = new Point(508, 137);
-            returnbtn.Name = "returnbtn";
-            returnbtn.Size = new Size(75, 23);
-            returnbtn.TabIndex = 5;
-            returnbtn.Text = "sair";
-            returnbtn.UseVisualStyleBackColor = true;
-            returnbtn.Click += returnbtn_Click;
+            this.returnbtn.Location = new System.Drawing.Point(508, 137);
+            this.returnbtn.Name = "returnbtn";
+            this.returnbtn.Size = new System.Drawing.Size(75, 23);
+            this.returnbtn.TabIndex = 5;
+            this.returnbtn.Text = "sair";
+            this.returnbtn.UseVisualStyleBackColor = true;
+            this.returnbtn.Click += new System.EventHandler(this.returnbtn_Click);
             // 
             // listar_usuarios
             // 
-            listViewGroup2.Header = "Nome";
-            listViewGroup2.Name = "listViewGroup1";
-            listar_usuarios.Groups.AddRange(new ListViewGroup[] { listViewGroup2 });
-            listar_usuarios.Location = new Point(12, 214);
-            listar_usuarios.Name = "listar_usuarios";
-            listar_usuarios.Size = new Size(484, 360);
-            listar_usuarios.TabIndex = 6;
-            listar_usuarios.UseCompatibleStateImageBehavior = false;
-            listar_usuarios.View = View.Details;
+            listViewGroup1.Header = "Nome";
+            listViewGroup1.Name = "listViewGroup1";
+            this.listar_usuarios.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1});
+            this.listar_usuarios.Location = new System.Drawing.Point(12, 214);
+            this.listar_usuarios.Name = "listar_usuarios";
+            this.listar_usuarios.Size = new System.Drawing.Size(484, 360);
+            this.listar_usuarios.TabIndex = 6;
+            this.listar_usuarios.UseCompatibleStateImageBehavior = false;
+            this.listar_usuarios.View = System.Windows.Forms.View.Details;
             // 
             // excluir
             // 
-            excluir.Location = new Point(182, 112);
-            excluir.Name = "excluir";
-            excluir.Size = new Size(127, 73);
-            excluir.TabIndex = 7;
-            excluir.Text = "excluir";
-            excluir.UseVisualStyleBackColor = true;
-            excluir.Click += excluir_Click;
+            this.excluir.Location = new System.Drawing.Point(182, 112);
+            this.excluir.Name = "excluir";
+            this.excluir.Size = new System.Drawing.Size(127, 73);
+            this.excluir.TabIndex = 7;
+            this.excluir.Text = "excluir";
+            this.excluir.UseVisualStyleBackColor = true;
+            this.excluir.Click += new System.EventHandler(this.excluir_Click);
             // 
             // exclude
             // 
-            exclude.AutoSize = true;
-            exclude.Location = new Point(315, 141);
-            exclude.Name = "exclude";
-            exclude.Size = new Size(127, 19);
-            exclude.TabIndex = 8;
-            exclude.Text = "confirmar exclusão";
-            exclude.UseVisualStyleBackColor = true;
+            this.exclude.AutoSize = true;
+            this.exclude.Location = new System.Drawing.Point(315, 141);
+            this.exclude.Name = "exclude";
+            this.exclude.Size = new System.Drawing.Size(127, 19);
+            this.exclude.TabIndex = 8;
+            this.exclude.Text = "confirmar exclusão";
+            this.exclude.UseVisualStyleBackColor = true;
             // 
             // UserManagement
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(675, 586);
-            Controls.Add(exclude);
-            Controls.Add(excluir);
-            Controls.Add(listar_usuarios);
-            Controls.Add(returnbtn);
-            Controls.Add(label1);
-            Controls.Add(user_cadbtn);
-            Name = "UserManagement";
-            Text = "UserManagement";
-            Load += UserManagement_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(675, 586);
+            this.Controls.Add(this.exclude);
+            this.Controls.Add(this.excluir);
+            this.Controls.Add(this.listar_usuarios);
+            this.Controls.Add(this.returnbtn);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.user_cadbtn);
+            this.Name = "UserManagement";
+            this.Text = "UserManagement";
+            this.Load += new System.EventHandler(this.UserManagement_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

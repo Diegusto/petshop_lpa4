@@ -111,12 +111,15 @@ namespace projeto_petshop
                 }
             }
         }
-
-        private void relatory_Click(object sender, EventArgs e)
+        private void relatory_Click_1(object sender, EventArgs e)
         {
-            this.Close();
-            relatorio rel = new relatorio();
-            rel.Show();
+
         }
+
+        private void excluir_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

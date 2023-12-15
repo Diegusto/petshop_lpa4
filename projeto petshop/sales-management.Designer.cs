@@ -28,100 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            add_sale = new Button();
-            label1 = new Label();
-            button2 = new Button();
-            listar_vendas = new ListView();
-            excluir = new Button();
-            relatory = new Button();
-            exclude = new CheckBox();
-            SuspendLayout();
+            this.add_sale = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.listar_vendas = new System.Windows.Forms.ListView();
+            this.excluir = new System.Windows.Forms.Button();
+            this.relatory = new System.Windows.Forms.Button();
+            this.exclude = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
             // 
             // add_sale
             // 
-            add_sale.Location = new Point(12, 131);
-            add_sale.Name = "add_sale";
-            add_sale.Size = new Size(108, 67);
-            add_sale.TabIndex = 0;
-            add_sale.Text = "Cadastrar";
-            add_sale.UseVisualStyleBackColor = true;
-            add_sale.Click += add_sale_Click;
+            this.add_sale.Location = new System.Drawing.Point(12, 131);
+            this.add_sale.Name = "add_sale";
+            this.add_sale.Size = new System.Drawing.Size(108, 67);
+            this.add_sale.TabIndex = 0;
+            this.add_sale.Text = "Cadastrar";
+            this.add_sale.UseVisualStyleBackColor = true;
+            this.add_sale.Click += new System.EventHandler(this.add_sale_Click);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(224, 76);
-            label1.Name = "label1";
-            label1.Size = new Size(246, 37);
-            label1.TabIndex = 1;
-            label1.Text = "Administrar Vendas";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(224, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(246, 37);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Administrar Vendas";
             // 
             // button2
             // 
-            button2.Location = new Point(600, 153);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 3;
-            button2.Text = "sair";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.button2.Location = new System.Drawing.Point(600, 153);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "sair";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // listar_vendas
             // 
-            listar_vendas.Location = new Point(12, 236);
-            listar_vendas.Name = "listar_vendas";
-            listar_vendas.Size = new Size(663, 289);
-            listar_vendas.TabIndex = 4;
-            listar_vendas.UseCompatibleStateImageBehavior = false;
+            this.listar_vendas.Location = new System.Drawing.Point(12, 236);
+            this.listar_vendas.Name = "listar_vendas";
+            this.listar_vendas.Size = new System.Drawing.Size(663, 289);
+            this.listar_vendas.TabIndex = 4;
+            this.listar_vendas.UseCompatibleStateImageBehavior = false;
             // 
             // excluir
             // 
-            excluir.Location = new Point(160, 131);
-            excluir.Name = "excluir";
-            excluir.Size = new Size(108, 67);
-            excluir.TabIndex = 5;
-            excluir.Text = "excluir";
-            excluir.UseVisualStyleBackColor = true;
-            excluir.Click += excluir_Click;
+            this.excluir.Location = new System.Drawing.Point(160, 131);
+            this.excluir.Name = "excluir";
+            this.excluir.Size = new System.Drawing.Size(108, 67);
+            this.excluir.TabIndex = 5;
+            this.excluir.Text = "excluir";
+            this.excluir.UseVisualStyleBackColor = true;
+            this.excluir.Click += new System.EventHandler(this.excluir_Click);
             // 
             // relatory
             // 
-            relatory.Location = new Point(458, 132);
-            relatory.Name = "relatory";
-            relatory.Size = new Size(108, 67);
-            relatory.TabIndex = 6;
-            relatory.Text = "vendas por produto";
-            relatory.UseVisualStyleBackColor = true;
-            relatory.Click += relatory_Click;
+            this.relatory.Location = new System.Drawing.Point(458, 132);
+            this.relatory.Name = "relatory";
+            this.relatory.Size = new System.Drawing.Size(108, 67);
+            this.relatory.TabIndex = 6;
+            this.relatory.Text = "vendas por produto";
+            this.relatory.UseVisualStyleBackColor = true;
+            this.relatory.Click += new System.EventHandler(this.relatory_Click_1);
             // 
             // exclude
             // 
-            exclude.AutoSize = true;
-            exclude.Location = new Point(273, 157);
-            exclude.Name = "exclude";
-            exclude.Size = new Size(127, 19);
-            exclude.TabIndex = 7;
-            exclude.Text = "confirmar exclusão";
-            exclude.UseVisualStyleBackColor = true;
+            this.exclude.AutoSize = true;
+            this.exclude.Location = new System.Drawing.Point(273, 157);
+            this.exclude.Name = "exclude";
+            this.exclude.Size = new System.Drawing.Size(127, 19);
+            this.exclude.TabIndex = 7;
+            this.exclude.Text = "confirmar exclusão";
+            this.exclude.UseVisualStyleBackColor = true;
             // 
             // sales_management
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(687, 537);
-            Controls.Add(exclude);
-            Controls.Add(relatory);
-            Controls.Add(excluir);
-            Controls.Add(listar_vendas);
-            Controls.Add(button2);
-            Controls.Add(label1);
-            Controls.Add(add_sale);
-            Name = "sales_management";
-            Text = "sales_management";
-            Load += sales_management_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(687, 537);
+            this.Controls.Add(this.exclude);
+            this.Controls.Add(this.relatory);
+            this.Controls.Add(this.excluir);
+            this.Controls.Add(this.listar_vendas);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.add_sale);
+            this.Name = "sales_management";
+            this.Text = "sales_management";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -73,7 +73,7 @@ namespace projeto_petshop
 
                     connection.OpenConnection();
                     sqlCommand.Connection = connection.ReturnConnection();
-                    sqlCommand.CommandText = "delete from produtos where descricao like %@descricao%";
+                    sqlCommand.CommandText = "delete from produtos where descricao = @descricao";
                     sqlCommand.Parameters.AddWithValue("@descricao", nome_produto);
                     try
                     {

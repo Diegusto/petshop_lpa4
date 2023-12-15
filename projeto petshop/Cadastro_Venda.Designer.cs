@@ -28,114 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            confirm_cad_sell = new Button();
-            cancel_cad_sell = new Button();
-            label3 = new Label();
-            label2 = new Label();
-            total_value = new TextBox();
-            product_name = new TextBox();
-            label4 = new Label();
-            User_id = new TextBox();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.confirm_cad_sell = new System.Windows.Forms.Button();
+            this.cancel_cad_sell = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.total_value = new System.Windows.Forms.TextBox();
+            this.product_name = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.User_id = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(261, 56);
-            label1.Name = "label1";
-            label1.Size = new Size(252, 37);
-            label1.TabIndex = 2;
-            label1.Text = "Cadastro de Vendas";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(261, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(252, 37);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Cadastro de Vendas";
             // 
             // confirm_cad_sell
             // 
-            confirm_cad_sell.Cursor = Cursors.IBeam;
-            confirm_cad_sell.Location = new Point(321, 256);
-            confirm_cad_sell.Name = "confirm_cad_sell";
-            confirm_cad_sell.Size = new Size(75, 23);
-            confirm_cad_sell.TabIndex = 23;
-            confirm_cad_sell.Text = "confirmar";
-            confirm_cad_sell.UseVisualStyleBackColor = true;
-            confirm_cad_sell.Click += confirm_cad_sell_Click;
+            this.confirm_cad_sell.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.confirm_cad_sell.Location = new System.Drawing.Point(321, 256);
+            this.confirm_cad_sell.Name = "confirm_cad_sell";
+            this.confirm_cad_sell.Size = new System.Drawing.Size(75, 23);
+            this.confirm_cad_sell.TabIndex = 23;
+            this.confirm_cad_sell.Text = "confirmar";
+            this.confirm_cad_sell.UseVisualStyleBackColor = true;
+            this.confirm_cad_sell.Click += new System.EventHandler(this.confirm_cad_sell_Click);
             // 
             // cancel_cad_sell
             // 
-            cancel_cad_sell.Cursor = Cursors.IBeam;
-            cancel_cad_sell.Location = new Point(438, 256);
-            cancel_cad_sell.Name = "cancel_cad_sell";
-            cancel_cad_sell.Size = new Size(75, 23);
-            cancel_cad_sell.TabIndex = 22;
-            cancel_cad_sell.Text = "cancelar";
-            cancel_cad_sell.UseVisualStyleBackColor = true;
+            this.cancel_cad_sell.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cancel_cad_sell.Location = new System.Drawing.Point(438, 256);
+            this.cancel_cad_sell.Name = "cancel_cad_sell";
+            this.cancel_cad_sell.Size = new System.Drawing.Size(75, 23);
+            this.cancel_cad_sell.TabIndex = 22;
+            this.cancel_cad_sell.Text = "cancelar";
+            this.cancel_cad_sell.UseVisualStyleBackColor = true;
+            this.cancel_cad_sell.Click += new System.EventHandler(this.cancel_cad_sell_Click);
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(307, 159);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 15);
-            label3.TabIndex = 17;
-            label3.Text = "Valor total:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(307, 159);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 15);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Valor total:";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(264, 119);
-            label2.Name = "label2";
-            label2.Size = new Size(106, 15);
-            label2.TabIndex = 16;
-            label2.Text = "Nome do Produto:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(264, 119);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 15);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Nome do Produto:";
             // 
             // total_value
             // 
-            total_value.Location = new Point(376, 156);
-            total_value.Name = "total_value";
-            total_value.Size = new Size(100, 23);
-            total_value.TabIndex = 15;
+            this.total_value.Location = new System.Drawing.Point(376, 156);
+            this.total_value.Name = "total_value";
+            this.total_value.Size = new System.Drawing.Size(100, 23);
+            this.total_value.TabIndex = 15;
             // 
             // product_name
             // 
-            product_name.Location = new Point(376, 116);
-            product_name.Name = "product_name";
-            product_name.Size = new Size(100, 23);
-            product_name.TabIndex = 14;
+            this.product_name.Location = new System.Drawing.Point(376, 116);
+            this.product_name.Name = "product_name";
+            this.product_name.Size = new System.Drawing.Size(100, 23);
+            this.product_name.TabIndex = 14;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(289, 203);
-            label4.Name = "label4";
-            label4.Size = new Size(81, 15);
-            label4.TabIndex = 25;
-            label4.Text = "ID do Usuario:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(289, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 15);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "ID do Usuario:";
             // 
             // User_id
             // 
-            User_id.Location = new Point(376, 200);
-            User_id.Name = "User_id";
-            User_id.Size = new Size(100, 23);
-            User_id.TabIndex = 24;
+            this.User_id.Location = new System.Drawing.Point(376, 200);
+            this.User_id.Name = "User_id";
+            this.User_id.Size = new System.Drawing.Size(100, 23);
+            this.User_id.TabIndex = 24;
             // 
             // Cadastro_Venda
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label4);
-            Controls.Add(User_id);
-            Controls.Add(confirm_cad_sell);
-            Controls.Add(cancel_cad_sell);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(total_value);
-            Controls.Add(product_name);
-            Controls.Add(label1);
-            Name = "Cadastro_Venda";
-            Text = "Cadastro_Venda";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.User_id);
+            this.Controls.Add(this.confirm_cad_sell);
+            this.Controls.Add(this.cancel_cad_sell);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.total_value);
+            this.Controls.Add(this.product_name);
+            this.Controls.Add(this.label1);
+            this.Name = "Cadastro_Venda";
+            this.Text = "Cadastro_Venda";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

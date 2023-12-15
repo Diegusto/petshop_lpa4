@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -44,17 +45,40 @@ namespace projeto_petshop
 
                 sqlCommand.Connection = connection.ReturnConnection();
 
-                sqlCommand.CommandText = "select id from tipo_animal where descricao like %@animal%";
+                sqlCommand.CommandText = "select id from tipo_animal where descricao =@animal";
                 sqlCommand.Parameters.AddWithValue("@animal", Animal);
-
                 SqlDataReader reader = sqlCommand.ExecuteReader();
-                var IdAnimal = reader[0];
+                string IdAnimal;
+                Int32 id_animal;
 
-                sqlCommand.CommandText = "insert into produtos (tipo, descricao, valor, tipo_animal) Values (@tipo, @descricao, @valor, @tipo_animal)";
-                sqlCommand.Parameters.AddWithValue("@tipo", ProductType);
-                sqlCommand.Parameters.AddWithValue("@descricao", ProductName);
-                sqlCommand.Parameters.AddWithValue("@valor", ProductValue);
-                sqlCommand.Parameters.AddWithValue("@tipo_animal",IdAnimal);
+                string IdProduto;
+                Int32 id_produto;
+
+                if (reader.Read())
+                {
+                    IdAnimal = reader[0].ToString();
+                    id_animal = Convert.ToInt32(IdAnimal);
+
+                    sqlCommand.CommandText = "select id from tipo_produto where descricao =@produto";
+                    sqlCommand.Parameters.AddWithValue("@produto", ProductType);
+
+                    IdProduto = reader[0].ToString();
+                    id_produto = Convert.ToInt32(IdProduto);
+
+                    connection.CloseConnection();
+
+                    connection.OpenConnection();
+                    sqlCommand.Connection = connection.ReturnConnection();
+
+                    sqlCommand.CommandText = "insert into produtos (tipo, descricao, valor, tipo_animal) Values (@tipo, @descricao, @valor, @tipo_animal)";
+                    sqlCommand.Parameters.AddWithValue("@tipo", id_produto);
+                    sqlCommand.Parameters.AddWithValue("@descricao", ProductName);
+                    sqlCommand.Parameters.AddWithValue("@valor", ProductValue);
+                    sqlCommand.Parameters.AddWithValue("@tipo_animal", id_animal);
+
+                }
+
+                
                 try
                 {
 
