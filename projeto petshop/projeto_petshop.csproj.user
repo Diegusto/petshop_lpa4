@@ -19,9 +19,6 @@
     <Compile Update="Product_management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="relatorio.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="sales-management.cs">
       <SubType>Form</SubType>
     </Compile>

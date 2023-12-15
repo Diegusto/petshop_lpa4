@@ -81,4 +81,3 @@ C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\De
 C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.genruntimeconfig.cache
 C:\Users\diegu\Downloads\Dev\projeto-petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\ref\projeto_petshop.dll
 C:\Users\cj3014673\Downloads\projeto petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.Cadastro_Venda.resources
-C:\Users\cj3014673\Downloads\projeto petshop\petshop_lpa4\projeto petshop\obj\Debug\net6.0-windows\projeto_petshop.relatorio.resources
